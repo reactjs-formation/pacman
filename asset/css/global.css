@@ -1,0 +1,101 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+#map {
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    box-shadow: inset 0 0 2px 4px rgb(0, 8, 255);
+    /* border: solid 4px blue; */
+    position: absolute;
+    
+}
+
+.border-block-rb {
+    box-shadow: inset -4px -4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-lt {
+    box-shadow: inset 4px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-rt {
+    box-shadow: inset -4px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-lb {
+    box-shadow: inset 4px -4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-t {
+    box-shadow: inset 0px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-b {
+    box-shadow: inset 0px -4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-r {
+    box-shadow: inset -4px 0px 0px 0px rgb(0, 8, 255);
+}
+.border-block-l {
+    box-shadow: inset 4px 0px 0px 0px rgb(0, 8, 255);
+}
+.border-block-xt {
+    box-shadow: inset 4px 4px 0px 0px rgb(0, 8, 255), inset -4px 0px 0px 0px rgb(0, 8, 255);
+}
+.border-block-xb {
+    box-shadow: inset 4px -4px 0px 0px rgb(0, 8, 255), inset -4px 0px 0px 0px rgb(0, 8, 255);
+}
+.border-block-yl {
+    box-shadow: inset 4px -4px 0px 0px rgb(0, 8, 255), inset 0px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-xr {
+    box-shadow: inset -4px -4px 0px 0px rgb(0, 8, 255), inset 0px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-y {
+    box-shadow: inset 0px -4px 0px 0px rgb(0, 8, 255), inset 0px 4px 0px 0px rgb(0, 8, 255);
+}
+.border-block-x {
+    box-shadow: inset -4px 0px 0px 0px rgb(0, 8, 255), inset 4px 0px 0px 0px rgb(0, 8, 255);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#pacman, #pacman2{
+    width: 50px;
+    height: 50px;
+    background-size: auto 50px;
+    background-position: 0px 0px;
+    background-image: url(/asset/image/pacman-frames-768.png);
+    position: absolute;
+    z-index: 5;
+    display: block;
+}
+
+#pacman2 {
+    position: absolute;
+    display: none;
+}
+
+.background {
+    width: 50px;
+    height: 800px;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+    background-color: #444;
+}
